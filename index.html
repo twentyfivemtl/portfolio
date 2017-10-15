@@ -23,7 +23,9 @@
 
   <body>
 
-    <div class="navbar-portfolio">
+<!-- NAVBAR -->
+
+    <div class="navbar-portfolio navbar-fixed">
 
       <!-- Portfolio brand name-->
 
@@ -51,10 +53,58 @@
           </ul>
         </div>
       </div>
-
-
     </div>
 
+    <script>
+      $(function () {
+        // hide .navbar first
+        $(".navbar-portfolio").hide();
+        // fade in .navbar
+        $(function () {
+          $(window).scroll(function () {
+                  // set distance user needs to scroll before we fadeIn navbar
+            if ($(this).scrollTop() > 930) {
+              $('.navbar-portfolio').fadeIn("slow");
+            } else {
+              $('.navbar-portfolio').fadeOut("slow");
+            }
+          });
+        });
+      });
+    </script>
+
+<!-- BANNER -->
+
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/banner-code.png');">
+      <div>
+        <h1>HI, I'M THIBAULT</h1>
+        <p>Full Stack Developer</p>
+        <p class="banner-description">Front-end oriented !</p>
+        <a href="#bio-link" class="btn-banner btn-lg">Let's start</a>
+        <div class="mouse">
+            <span></span>
+      </div>
+      </div>
+    </div>
+
+<!-- BIO -->
+    <div class="wrapper">
+      <p id="bio-link" class="title-bio">BIO</p>
+        <div class="container">
+          <img class="avatar" src="images/avatar.JPG">
+          <p class="p-bio text-justify">Always been passionated with the entrepreneurial and start-up world, both business and the technical part. As a dedicated and motivated developer, I am seeking junior level position in this environment to learn and grow within. and blah blah blah need to work on the text...</p>
+        </div>
+    </div>
+
+<!-- EXPERIENCE -->
+
+    <div class="wrapper">
+      <p class="title-experience">EXPERIENCES</p>
+    </div>
+<!-- SKILLS -->
+<!-- EDUCATION -->
+<!-- CONTACT -->
+<!-- FOOTER -->
   </body>
 
 </html>

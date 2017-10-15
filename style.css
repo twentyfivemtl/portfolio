@@ -1,91 +1,240 @@
-/* Main navbar */
-.navbar-portfolio {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* NAVBAR */
+  .navbar-portfolio {
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+    background: white;
+    transition: all 0.6s ease;
+    height: 70px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.navbar-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
 }
 
-/* Portfolio brand name */
+  /* Portfolio brand name */
 
-.brandname {
-  font-family: 'Abel', sans-serif;
+  .brandname {
+    font-family: 'Abel', sans-serif;
+  }
+
+  /* Navbar right section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .navbar-item {
+    cursor: pointer;
+    padding: 0 20px;
+  }
+
+  .btn-navbar-contact {
+    font-family: 'Open Sans', sans-serif;
+    color: #201E1B;
+    border: 1px solid #201E1B;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .btn-navbar-contact:hover {
+    text-decoration: none;
+    color: #902F40;
+    border-color: #902F40;
+  }
+
+  .navbar-link {
+    color: #201E1B;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .navbar-link:hover {
+    color: #902F40;
+    text-decoration: none;
+  }
+
+  /* Dropdown menu on XS/SM */
+
+  .navbar-porfolio-dropdown-menu {
+    margin-top: 15px;
+    box-shadow: 1px 1px 4px #E6E6E6;
+    border-color: #E6E6E6;
+  }
+
+  .navbar-portfolio-dropdown-menu li > a {
+    transition: color 0.3s ease;
+    font-weight: 300 !important;
+    color: #201E1B !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    padding: 10px 20px;
+  }
+  .navbar-portfolio-dropdown-menu li > a:hover {
+    font-weight: 400 !important;
+    background: transparent !important;
+    color: #902F40 !important;
+  }
+  .navbar-portfolio-dropdown-menu:before {
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: -6px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+  }
+
+/* BANNER */
+
+  .banner {
+    color: #F6F5F5;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* if you have a 70px navbar => height: calc(100vh - 70px); */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  }
+  .banner p {
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+
+  .banner-description {
+    font-size: 25px !important;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin-bottom: 50px !important;
+  }
+
+  .btn-banner {
+    color: #F6F5F5;
+    border: 1px solid #F6F5F5;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+
+  .btn-banner:hover{
+    color: #902F40;
+    text-decoration: none;
+    background-color: #F6F5F5;
+  }
+
+
+
+/* BIO */
+
+  .title-bio {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    border-radius: 150px;
+    height: 300px;
+    width: 300px;
+    margin: 0px 25px;
+  }
+
+  .p-bio {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0px 25px;
+  }
+
+.mouse {
+    border: 1px solid #F6F5F5;
+    border-radius: 13px;
+    bottom: 40px;
+    display: block;
+    height: 46px;
+    left:51%;
+    margin: 0 auto 0 -26px;
+    position: absolute;
+    width: 26px;
+}
+.mouse span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    background: none repeat scroll 0 0 #F6F5F5;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    height: 4px;
+    margin: 6px auto;
+    width: 4px;
+}
+@keyframes scroll {
+0% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+100% {
+    opacity: 0;
+    transform: translateY(20px);
+}
 }
 
-/* Navbar right section */
-.navbar-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Open Sans', sans-serif;
-}
 
-.navbar-item {
-  cursor: pointer;
-  padding: 0 20px;
-}
+/* EXPERIENCE */
 
-.btn-navbar-contact {
-  font-family: 'Open Sans', sans-serif;
-  color: #201E1B;
-  border: 1px solid #201E1B;
-  border-radius: 50px;
-  text-decoration: none;
-  padding: 10px 15px;
-  cursor: pointer;
-}
+   .title-experience {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
 
-.btn-navbar-contact:hover {
-  text-decoration: none;
-  color: #902F40;
-  border-color: #902F40;
-}
+/* SKILLS */
+/* EDUCATION */
+/* CONTACT */
+/* FOOTER */
+/* SHARED STYLE */
 
-.navbar-link {
-  color: #201E1B;
-  font-size: 14px;
-  text-decoration: none;
-}
 
-.navbar-link:hover {
-  color: #902F40;
-  text-decoration: none;
-}
 
-/* Dropdown menu on XS/SM */
 
-.navbar-porfolio-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
 
-.navbar-portfolio-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: 300 !important;
-  color: #201E1B !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-portfolio-dropdown-menu li > a:hover {
-  font-weight: 400 !important;
-  background: transparent !important;
-  color: #902F40 !important;
-}
-.navbar-portfolio-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
