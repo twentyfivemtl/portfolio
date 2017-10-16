@@ -329,14 +329,45 @@
     text-align: center;
     padding-top: 100px;
   }
+
+   .skills_container {
+    margin-top: 150px;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .card_skills {
+    margin: 0px 50px 100px 50px;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .skills_images {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .skills_name {
+    margin-top: 25px;
+    color: #902F40;
+  }
 /* EDUCATION */
 
-    .title-education {
-    font-family: 'Abel', sans-serif;
-    font-weight: lighter;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 100px;
+  .title-education {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 100px;
   }
 
 /* CONTACT */
@@ -411,12 +442,30 @@
 
   .container-footer {
     position: relative;
-    height: 100px;
+    height: 150px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #CDCDCD;
     z-index: 100;
+  }
+
+  .footer-cv {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer-cv a:hover {
+    color: #902F40;
+  }
+
+  .footer-cv a {
+    color: #201E1B;
+    text-decoration: none;
   }
 
   .footer-copyright {
