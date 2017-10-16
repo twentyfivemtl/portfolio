@@ -148,38 +148,6 @@
     background-color: #F6F5F5;
   }
 
-/* BIO */
-
-  .title-bio {
-    font-family: 'Abel', sans-serif;
-    font-weight: lighter;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 100px;
-  }
-
-  .container-bio {
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .avatar {
-    border-radius: 150px;
-    height: 300px;
-    width: 300px;
-    margin: 0px 25px;
-  }
-
-  .p-bio {
-    font-family: 'Abel', sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    margin: 0px 25px;
-  }
-
 /* MOUSE SCROLLING */
 
   .mouse {
@@ -217,6 +185,44 @@
   }
   }
 
+/* BIO */
+
+  .title-bio {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .container-bio {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    background-image: url("images/avatar_p.JPG");
+    border-radius: 50%;
+    height: 300px;
+    width: 800px;
+    margin: 0px 25px;
+    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .p-bio {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0px 25px;
+  }
+
+
+
 /* EXPERIENCE */
 
    .title-experience {
@@ -230,10 +236,11 @@
   .card_container {
     margin-top: 200px;
     width: 1500px;
-    display: flex !important;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
   }
 
   .back {
@@ -267,6 +274,10 @@
 
   }
 
+  .flip-card {
+    margin: 15px 75px 75px 75px;
+  }
+
   /* flip speed goes here */
   .flipper {
     transition: 0.6s;
@@ -284,7 +295,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28);
+    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
   }
 
   .back {
@@ -293,7 +304,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28);
+    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
   }
 
   /* front pane, placed above back */
@@ -307,6 +318,7 @@
   .back {
     transform: rotateY(180deg);
   }
+
 
 /* SKILLS */
 
@@ -341,7 +353,7 @@
   .contact_form {
     max-width: 800px;
     text-align: center;
-    margin: 150px auto;
+    margin: 75px auto;
   }
 
   .input_name, .input_email, .input_subject, .input_submit, textarea {
@@ -384,16 +396,16 @@
    margin-right: 2%;
   }
 
-/* Clearfix */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  /* Clearfix */
+  .cf:before,
+  .cf:after {
+      content: " ";
+      display: table;
+  }
 
-.cf:after {
-    clear: both;
-}
+  .cf:after {
+      clear: both;
+  }
 
 /* FOOTER */
 
