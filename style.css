@@ -1,22 +1,22 @@
-/* NAVBAR */
-  .navbar-portfolio {
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-    background: white;
-    transition: all 0.6s ease;
-    height: 70px;
-    padding: 0px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  /* NAVBAR */
+    .navbar-portfolio {
+      box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+      background: white;
+      transition: all 0.6s ease;
+      height: 70px;
+      padding: 0px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.navbar-fixed {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  width: 100%;
-}
+  .navbar-fixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+  }
 
   /* Portfolio brand name */
 
@@ -148,8 +148,6 @@
     background-color: #F6F5F5;
   }
 
-
-
 /* BIO */
 
   .title-bio {
@@ -160,7 +158,7 @@
     padding-top: 100px;
   }
 
-  .container {
+  .container-bio {
     width: 1200px;
     height: 600px;
     display: flex;
@@ -182,41 +180,42 @@
     margin: 0px 25px;
   }
 
-.mouse {
-    border: 1px solid #F6F5F5;
-    border-radius: 13px;
-    bottom: 40px;
-    display: block;
-    height: 46px;
-    left:51%;
-    margin: 0 auto 0 -26px;
-    position: absolute;
-    width: 26px;
-}
-.mouse span {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-name: scroll;
-    background: none repeat scroll 0 0 #F6F5F5;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    display: block;
-    height: 4px;
-    margin: 6px auto;
-    width: 4px;
-}
-@keyframes scroll {
-0% {
-    opacity: 1;
-    transform: translateY(0px);
-}
-100% {
-    opacity: 0;
-    transform: translateY(20px);
-}
-}
+/* MOUSE SCROLLING */
 
+  .mouse {
+      border: 1px solid #F6F5F5;
+      border-radius: 13px;
+      bottom: 40px;
+      display: block;
+      height: 46px;
+      left:51%;
+      margin: 0 auto 0 -26px;
+      position: absolute;
+      width: 26px;
+  }
+  .mouse span {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
+      background: none repeat scroll 0 0 #F6F5F5;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      display: block;
+      height: 4px;
+      margin: 6px auto;
+      width: 4px;
+  }
+  @keyframes scroll {
+  0% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  }
 
 /* EXPERIENCE */
 
@@ -228,10 +227,150 @@
     padding-top: 100px;
   }
 
+  .card_container {
+    margin-top: 200px;
+    width: 1500px;
+    display: flex !important;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .back {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 15px;
+    }
+
+  .back h2 {
+    padding-bottom: 15px;
+  }
+
+  .back a {
+    text-decoration: none;
+    color: #CDCDCD;
+  }
+
+  .back a:hover {
+    color: #902F40;
+  }
+
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    width: 500px;
+    height: 300px;
+
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front {
+    border-radius: 2.5%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28);
+  }
+
+  .back {
+    border-radius: 2.5%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28);
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+
 /* SKILLS */
+
+  .title-skills {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
 /* EDUCATION */
+
+    .title-education {
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+  }
+
 /* CONTACT */
 /* FOOTER */
+
+.container-footer {
+  position: relative;
+  height: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CDCDCD;
+  z-index: 100;
+}
+
+.footer-copyright {
+ text-align: center;
+ font-size: 14px;
+ margin-bottom: 5px;
+ font-family: 'Abel', sans-serif;
+}
+
+.social-logo{
+  margin-top: 15px;
+}
+
+.social-logo-footer {
+  text-align: center;
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-right: 20px;
+  list-style: none;
+  font-size: 30px;
+}
+
+.social-logo-footer li {
+  display: inline;
+  padding: 0px 15px;
+  margin-top: 15px;
+}
+
+.fa:hover {
+  color: #902F40;
+  transition: 0.2s ease-in-out;
+}
+
 /* SHARED STYLE */
 
 
