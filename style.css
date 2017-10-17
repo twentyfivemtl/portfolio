@@ -1,4 +1,9 @@
   /* NAVBAR */
+
+
+
+
+
     .navbar-portfolio {
       box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
       background: white;
@@ -98,7 +103,15 @@
     border-top: 1px solid #E6E6E6;
   }
 
+
+
+
+
 /* BANNER */
+
+
+
+
 
   .banner {
     color: #F6F5F5;
@@ -185,7 +198,15 @@
   }
   }
 
+
+
+
+
 /* BIO */
+
+
+
+
 
   .title-bio {
     font-family: 'Abel', sans-serif;
@@ -209,21 +230,29 @@
     height: 300px;
     width: 800px;
     margin: 0px 25px;
-    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
+    box-shadow: 0px 2.5px 5px 0px rgba(51,51,51,0.28);
     background-size: cover;
     background-position: center;
   }
 
   .p-bio {
+    width: 2000px;
     font-family: 'Abel', sans-serif;
     font-weight: lighter;
     font-size: 20px;
     margin: 0px 25px;
+    text-align-last: right;
   }
 
 
 
+
+
 /* EXPERIENCE */
+
+
+
+
 
    .title-experience {
     font-family: 'Abel', sans-serif;
@@ -287,7 +316,7 @@
 
   /* hide back of pane during swap */
   .front {
-    border-radius: 2.5%;
+    border-radius: 20px;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -295,16 +324,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
+    box-shadow: 0px 2.5px 5px 0px rgba(51,51,51,0.28);
   }
 
   .back {
-    border-radius: 2.5%;
+    border-radius: 20px;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 20px 0px rgba(51,51,51,0.28);
+    box-shadow: 0px 2.5px 5px 0px rgba(51,51,51,0.28);
   }
 
   /* front pane, placed above back */
@@ -320,7 +349,14 @@
   }
 
 
+
+
+
 /* SKILLS */
+
+
+
+
 
   .title-skills {
     font-family: 'Abel', sans-serif;
@@ -360,7 +396,16 @@
     margin-top: 25px;
     color: #902F40;
   }
+
+
+
+
+
 /* EDUCATION */
+
+
+
+
 
   .title-education {
   font-family: 'Abel', sans-serif;
@@ -370,7 +415,92 @@
   padding-top: 100px;
   }
 
+  .sous-title-education {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+  }
+
+  .container-education {
+    margin-top: 150px;
+    width: 1300px;
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+  }
+
+  .education-cards {
+    border-radius: 20px;
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    box-shadow: 0px 2.5px 5px 0px rgba(51,51,51,0.28);
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .footprint-edu {
+    height: 250px;
+    width: 800px;
+    background-image: url("images/footprint-education.png");
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 15px;
+  }
+
+  .flipit {
+    transform: scaleX(-1);
+    filter: FlipH;
+    margin-left: auto !important;
+  }
+
+
+
+  .lewagon-edu {
+    margin-right: auto
+  }
+
+  .mcgill-edu {
+    margin-left: auto;
+  }
+
+  .stan-edu {
+    margin-right: auto;
+  }
+
+  .edu-title-card {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #902F40;
+  }
+
+  .edu-year-card {
+    font-size: 15px;
+    font-weight: ;
+    color: #F6F5F5;
+  }
+
+  .edu-description-card {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #F6F5F5;
+  }
+
+
+
+
+
 /* CONTACT */
+
+
+
+
 
  .title-contact {
     font-family: 'Abel', sans-serif;
@@ -438,7 +568,15 @@
       clear: both;
   }
 
+
+
+
+
 /* FOOTER */
+
+
+
+
 
   .container-footer {
     position: relative;
@@ -504,6 +642,10 @@
     transition: 0.2s ease-in-out;
     cursor: pointer;
   }
+
+
+
+
 
 /* SHARED STYLE */
 
