@@ -241,9 +241,12 @@
     font-weight: lighter;
     font-size: 20px;
     margin: 0px 25px;
-    text-align-last: right;
+    /*text-align-last: right;*/
   }
 
+.p-last {
+  text-align: right;
+}
 
 
 
@@ -264,7 +267,7 @@
 
   .card_container {
     margin-top: 200px;
-    width: 1500px;
+    width: 1400px;
     display: flex;
     align-items: center;
     flex-flow: wrap;
@@ -405,8 +408,6 @@
 
 
 
-
-
   .title-education {
   font-family: 'Abel', sans-serif;
   font-weight: lighter;
@@ -425,7 +426,7 @@
   .container-education {
     margin-top: 150px;
     width: 1300px;
-    height: 1350px;
+    /*height: 1350px;*/
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
@@ -650,6 +651,9 @@
 /* SHARED STYLE */
 
 
-
+  .wrapper a {
+    text-decoration: none;
+    color: #333;
+  }
 
 

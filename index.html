@@ -42,22 +42,22 @@
       <!-- Portfolio right menu + responsive-->
 
       <div class="navbar-right hidden-xs hidden-sm">
-        <a href="" class="navbar-item navbar-link">Bio</a>
-        <a href="" class="navbar-item navbar-link">Experience</a>
-        <a href="" class="navbar-item navbar-link">Skills</a>
-        <a href="" class="navbar-item navbar-link">Education</a>
-        <a href="" class="btn-navbar-contact">Contact</a>
+        <a href="#bio-jump" class="navbar-item navbar-link">Bio</a>
+        <a href="#experience-jump" class="navbar-item navbar-link">Experience</a>
+        <a href="#skills-jump" class="navbar-item navbar-link">Skills</a>
+        <a href="#education-jump" class="navbar-item navbar-link">Education</a>
+        <a href="#contact-jump" class="btn-navbar-contact">Contact</a>
       </div>
 
       <div class="navbar-item hidden-md hidden-lg">
         <div class=dropdown>
           <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
           <ul class="dropdown-menu dropdown-menu-right navbar-portfolio-dropdown-menu">
-            <li><a href="#bio-link">Bio</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#bio-jump">Bio</a></li>
+            <li><a href="#experience-jump">Experience</a></li>
+            <li><a href="#skills-jump">Skills</a></li>
+            <li><a href="#education-jump">Education</a></li>
+            <li><a href="#contact-jump">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -71,7 +71,7 @@
         $(function () {
           $(window).scroll(function () {
                   // set distance user needs to scroll before we fadeIn navbar
-            if ($(this).scrollTop() > 930) {
+            if ($(this).scrollTop() > 852) {
               $('.navbar-portfolio').fadeIn("slow");
             } else {
               $('.navbar-portfolio').fadeOut("slow");
@@ -114,13 +114,12 @@
 
 
     <div id="bio-link" class="wrapper">
-      <p class="title-bio">BIO</p>
+      <a id="bio-jump"><p class="title-bio">BIO</p></a>
         <div class="container container-bio">
           <img class="avatar">
-          <p class="p-bio text-justify">   Since a young age I’ve always been passionate with the entrepreneurial and start-up world. I didn’t focus on a specific industry as long as it was filling a useful gap in the market or making progress for the future. My interest was always divided between both aspects of the creative process; technical and business. That being said, I flourished with ideas but I couldn’t test them due to my lack of technical knowledge. I decided to do LeWagon Programming boot camp to be able to do MVP. As a dedicated and motivated developer, once I completed the boot camp, I kept working on side projects to develop my knowledge while finishing with my studies at McGil.
-          As for the purpose of this portfolio, I am seeking a junior level position as a front-end developer or full stack developer within a dynamic company or start up. Please have a look at my portfolio below!<br><br>Have a great day!<br><br>Thibault Derennes
+          <p class="p-bio text-justify"> &emsp;I have been passionate about the entrepreneurial and start-up world since a very young age. My focus was not directed towards a particular industry but towards any business/start-up whose goal is to satisfy existent needs in the market or to ascend in the domain they belong to by participating in innovation and development.<br><br>My interest in both the technical and business side of the creative process flourished with the ideas I had, however, I could not test them due to a lack of technical knowledge. I decided to enroll in LeWagon Programming boot camp to be able to do MVP. As a dedicated and motivated developer, once I completed the boot camp, I kept working on side projects to develop my knowledge while finishing my studies at McGill University.<br><br>As for the purpose of this portfolio, I am seeking a junior level position as a front-end developer or full stack developer within a dynamic company or start up. Please have a look at my portfolio below !</p>
         </div>
-    </div>s
+    </div>
 
 
 
@@ -133,8 +132,22 @@
 
 
     <div class="wrapper">
-      <p class="title-experience">EXPERIENCES</p>
+      <a id="experience-jump"><p class="title-experience">EXPERIENCES</p></a>
       <div class="container card_container">
+
+        <div class="flip-container flip-card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div>
+              <img class="front" src="images/portfolio-xxv.png">
+            </div>
+            <div class="back">
+              <h2>PORTFOLIO TWENTY FIVE</h2>
+              <p class="text-justify">To start refreshing my memory, I decided to create a quick portfolio on GitHub pages showcasing my experiences and projects while finishing Uni. You'll also find my skills, education and a way to contact me. Twenty five is a personal brand where I build my projects on.</p>
+              <a href="https://github.com/twentyfivemtl/portfolio">LINK TO PROJECT</a>
+            </div>
+          </div>
+        </div>
+
         <div class="flip-container flip-card" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div>
@@ -142,7 +155,7 @@
             </div>
             <div class="back">
               <h2>WASIS - LE WAGON FINAL PROJECT</h2>
-              <p class="text-justify"> WASIS was the final project at the end of LeWagon Montreal realized in teams of 4 in a two weeks time frame. We applied most of what we learned during the first 7 weeks in those 2 last weeks. Wasis is a web app to find workplaces around you with specific criteria. Go have a look! </p>
+              <p class="text-justify">WASIS was the final project at the end of LeWagon Montreal realized by teams of four in a two-week time frame. We applied most of what we learned during the first 7 weeks in those final 2 weeks. WASIS is a web app to find workplaces around you with specific criteria. Go have a look!</p>
               <a href="https://www.wasis.top/">LINK TO PROJECT</a>
             </div>
           </div>
@@ -155,7 +168,7 @@
             </div>
             <div class="back">
               <h2>COSMEETER - LE WAGON MID PROJECT</h2>
-              <p class="text-justify">Cosmeeter was the first group project we did during the bootcamp. It was completed within a week and we were a team of 4 working from 11am to 6pm during the allocated week. The project was to produce a look-a-like AirBnB. Link is to GitHub, the project run locally.</p>
+              <p class="text-justify">Cosmeeter was the first group project we did during the boot camp. It was completed within a week of work as a team of four working from 11:00am to 06:00pm. The project was to produce a look-a-like AirBnB. Link is to GitHub, the project runs locally.</p>
               <a href="https://github.com/marcusbey/cosmeeter">LINK TO PROJECT</a>
             </div>
           </div>
@@ -167,7 +180,7 @@
             </div>
             <div class="back">
               <h2>MARKETING INTERN</h2>
-              <p class="text-justify">In september of 2015, I went to of London as an intern at Ubisoft UK, serving the EMEA. I worked on major franchises like Farcry, Assassin's Creed. I also work to set up  a few PR events. For more info see my CV attached at the bottom of the page.</p>
+              <p class="text-justify">In September of 2015, I went to London as an intern for Ubisoft UK, serving the EMEA. I worked on major franchises like Farcry and Assassin's Creed. I also work to set up  a few PR events. For more information, please find my CV attached at the bottom of the page.</p>
               <a href="https://www.ubisoft.com/en-US/office/uk.aspx">LINK TO WEBSITE</a>
             </div>
           </div>
@@ -186,7 +199,7 @@
 
 
    <div class="wrapper">
-    <p class="title-skills">SKILLS</p>
+    <a id="skills-jump"><p class="title-skills">SKILLS</p></a>
     <div class="container skills_container">
       <div class="card_skills">
         <div class="skills_images" style="background-image: url('images/ruby_skills.svg');">
@@ -257,7 +270,7 @@
 
 
    <div class="wrapper">
-      <p class="title-education">EDUCATION</p>
+      <a id="education-jump"><p class="title-education">EDUCATION</p></a>
       <p class="sous-title-education">See CV attached at the bottom</p>
 
      <div class="container container-education">
@@ -298,7 +311,7 @@
 
 
    <div class="wrapper">
-      <p class="title-contact">CONTACT ME</p>
+      <a id="contact-jump"><p class="title-contact">CONTACT ME</p></a>
    </div>
 
    <form class="contact_form cf">
