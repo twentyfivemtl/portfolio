@@ -1,96 +1,56 @@
 <html>
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Thibault Derennes</title>
+  <title>Thibault Derennes</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Open+Sans" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap framework-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- My style -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Open+Sans" rel="stylesheet">
+</head>
 
-    <!-- Fontawesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
 
-    <!-- Bootstrap framework-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- My style -->
-    <link rel="stylesheet" href="style.css">
-
-  </head>
-
-  <body>
-
-
-
-
-
-<!-- NAVBAR -->
-
-
-
-
-
-    <div class="navbar-portfolio navbar-fixed">
-
-      <!-- Portfolio brand name-->
-
-      <h2 class="brandname"><strong>TWENTY FIVE</strong></h2>
-
-      <!-- Portfolio right menu + responsive-->
-
-      <div class="navbar-right hidden-xs hidden-sm">
-        <a href="#bio-jump" class="navbar-item navbar-link">Bio</a>
-        <a href="#experience-jump" class="navbar-item navbar-link">Experience</a>
-        <a href="#skills-jump" class="navbar-item navbar-link">Skills</a>
-        <a href="#education-jump" class="navbar-item navbar-link">Education</a>
-        <a href="mailto:t.derennes2@gmail.com" class="btn-navbar-contact">Contact</a>
-      </div>
-<!-- <form class="contact_form cf" action="mailto:someone@example.com"> -->
-      <div class="navbar-item hidden-md hidden-lg">
-        <div class=dropdown>
-          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-          <ul class="dropdown-menu dropdown-menu-right navbar-portfolio-dropdown-menu">
-            <li><a href="#bio-jump">Bio</a></li>
-            <li><a href="#experience-jump">Experience</a></li>
-            <li><a href="#skills-jump">Skills</a></li>
-            <li><a href="#education-jump">Education</a></li>
-            <li><a href="mailto:t.derennes2@gmail.com">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- NAVBAR -->
+  <div class="navbar-portfolio navbar-fixed">
+    <!-- Portfolio brand name-->
+    <h2 class="brandname"><strong>TWENTY FIVE</strong></h2>
+    <div class="navbar-right">
+      <a href="#bio-jump" class="navbar-item navbar-link">Bio</a>
+      <a href="#experience-jump" class="navbar-item navbar-link">Experience</a>
+      <a href="#skills-jump" class="navbar-item navbar-link">Skills</a>
+      <a href="#education-jump" class="navbar-item navbar-link">Education</a>
+      <a href="mailto:t.derennes2@gmail.com" class="btn-navbar-contact">Contact</a>
     </div>
+  </div>
 
-    <script>
-      $(function () {
+  <script>
+    $(function () {
         // hide .navbar first
         $(".navbar-portfolio").hide();
         // fade in .navbar
         $(function () {
           $(window).scroll(function () {
                   // set distance user needs to scroll before we fadeIn navbar
-            if ($(this).scrollTop() > 852) {
-              $('.navbar-portfolio').fadeIn("slow");
-            } else {
-              $('.navbar-portfolio').fadeOut("slow");
-            }
-          });
+                  if ($(this).scrollTop() > 852) {
+                    $('.navbar-portfolio').fadeIn("slow");
+                  } else {
+                    $('.navbar-portfolio').fadeOut("slow");
+                  }
+                });
         });
       });
     </script>
 
-
-
-
-
-<!-- BANNER -->
-
-
-
-
-
+    <!-- BANNER -->
     <div class="banner" style="background-image: linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/banner-code.png');">
       <div>
         <h1>HI, I'M THIBAULT</h1>
@@ -98,39 +58,21 @@
         <p class="banner-description">Front-end oriented !</p>
         <a href="#bio-link" class="btn-banner btn-lg">Let's start</a>
         <div class="mouse">
-            <span></span>
+          <span></span>
         </div>
       </div>
     </div>
 
-
-
-
-
-<!-- BIO -->
-
-
-
-
-
+    <!-- BIO -->
     <div id="bio-link" class="wrapper">
       <a id="bio-jump"><p class="title-bio">BIO</p></a>
-        <div class="container container-bio">
-          <img class="avatar col-xs-6">
-          <p class="p-bio text-justify"> &emsp;I have been passionate about the entrepreneurial and start-up world since a very young age. My focus was not directed towards a particular industry but towards any business/start-up whose goal is to satisfy existent needs in the market or to ascend in the domain they belong to by participating in innovation and development.<br><br>My interest in both the technical and business side of the creative process flourished with the ideas I had, however, I could not test them due to a lack of technical knowledge. I decided to enroll in LeWagon Programming boot camp to be able to do MVP. As a dedicated and motivated developer, once I completed the boot camp, I kept working on side projects to develop my knowledge while finishing my studies at McGill University.<br><br>As for the purpose of this portfolio, I am seeking a junior level position as a front-end developer or full stack developer within a dynamic company or start up. Please have a look at my portfolio below !</p>
-        </div>
+      <div class="container container-bio">
+        <img class="avatar col-xs-6">
+        <p class="p-bio text-justify"> &emsp;I have been passionate about the entrepreneurial and start-up world since a very young age. My focus was not directed towards a particular industry but towards any business/start-up whose goal is to satisfy existent needs in the market or to ascend in the domain they belong to by participating in innovation and development.<br><br>My interest in both the technical and business side of the creative process flourished with the ideas I had, however, I could not test them due to a lack of technical knowledge. I decided to enroll in LeWagon Programming boot camp to be able to do MVP. As a dedicated and motivated developer, once I completed the boot camp, I kept working on side projects to develop my knowledge while finishing my studies at McGill University.<br><br>As for the purpose of this portfolio, I am seeking a junior level position as a front-end developer or full stack developer within a dynamic company or start up. Please have a look at my portfolio below !</p>
+      </div>
     </div>
 
-
-
-
-
-<!-- EXPERIENCE -->
-
-
-
-
-
+    <!-- EXPERIENCE -->
     <div class="wrapper">
       <a id="experience-jump"><p class="title-experience">EXPERIENCES</p></a>
       <div class="container card_container">
@@ -146,7 +88,6 @@
             </div>
           </div>
         </div>
-
         <div class="flip-container flip-card" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div>
@@ -154,12 +95,11 @@
             </div>
             <div class="back">
               <h2>PORTFOLIO TWENTY FIVE</h2>
-              <p class="text-justify">I decided to create a quick fully responsive portfolio on GitHub pages showcasing my experiences and projects while finishing Uni. You'll also find my skills, education and a way to contact me. Twenty five is a personal brand where I build my projects on.</p>
+              <p class="text-justify">I decided to create a portfolio on GitHub pages showcasing my experiences and projects while finishing Uni. You'll also find my skills, education and a way to contact me. Twenty five is a personal brand where I build my projects on.</p>
               <a href="https://github.com/twentyfivemtl/portfolio">LINK TO PROJECT</a>
             </div>
           </div>
         </div>
-
         <div class="flip-container flip-card" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div>
@@ -172,7 +112,6 @@
             </div>
           </div>
         </div>
-
         <div class="flip-container flip-card" ontouchstart="this.classList.toggle('hover');">
           <div class="flipper">
             <div>
@@ -198,179 +137,123 @@
           </div>
         </div>
       </div>
-   </div>
+    </div>
 
-
-
-
-
-<!-- SKILLS -->
-
-
-
-
-
-   <div class="wrapper">
-    <a id="skills-jump"><p class="title-skills">SKILLS</p></a>
-    <div class="container skills_container">
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/ruby_skills.svg');">
+    <!-- SKILLS -->
+    <div class="wrapper">
+      <a id="skills-jump"><p class="title-skills">SKILLS</p></a>
+      <div class="container skills_container">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/ruby_skills.svg');">
+          </div>
+          <p class="skills_name">RUBY</p>
         </div>
-        <p class="skills_name">RUBY</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/github_skills.svg');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/github_skills.svg');">
+          </div>
+          <p class="skills_name">GITHUB</p>
         </div>
-        <p class="skills_name">GITHUB</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/oop_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/oop_skills.png');">
+          </div>
+          <p class="skills_name">OOP</p>
         </div>
-        <p class="skills_name">OOP</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/sql_skills.svg');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/sql_skills.svg');">
+          </div>
+          <p class="skills_name">SQL</p>
         </div>
-        <p class="skills_name">SQL</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/html5_skills.svg');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/html5_skills.svg');">
+          </div>
+          <p class="skills_name">HTML5</p>
         </div>
-        <p class="skills_name">HTML5</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/css3_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/css3_skills.png');">
+          </div>
+          <p class="skills_name">CSS3</p>
         </div>
-        <p class="skills_name">CSS3</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/js_skills.svg');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/js_skills.svg');">
+          </div>
+          <p class="skills_name">JAVACRIPT</p>
         </div>
-        <p class="skills_name">JAVACRIPT</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/rails_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/rails_skills.png');">
+          </div>
+          <p class="skills_name">RAILS</p>
         </div>
-        <p class="skills_name">RAILS</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/heroku_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/heroku_skills.png');">
+          </div>
+          <p class="skills_name">HEROKU</p>
         </div>
-        <p class="skills_name">HEROKU</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/adobe_experience_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/adobe_experience_skills.png');">
+          </div>
+          <p class="skills_name">ADOBE EXPERIENCE</p>
         </div>
-        <p class="skills_name">ADOBE EXPERIENCE</p>
-      </div>
-      <div class="card_skills">
-        <div class="skills_images" style="background-image: url('images/adobe_illustrator_skills.png');">
+        <div class="card_skills">
+          <div class="skills_images" style="background-image: url('images/adobe_illustrator_skills.png');">
+          </div>
+          <p class="skills_name">ADOBE ILLUSTRATOR</p>
         </div>
-        <p class="skills_name">ADOBE ILLUSTRATOR</p>
       </div>
     </div>
-   </div>
 
-
-
-
-
-<!-- EDUCATION -->
-
-
-
-
-
-   <div class="wrapper">
+    <!-- EDUCATION -->
+    <div class="wrapper">
       <a id="education-jump"><p class="title-education">EDUCATION</p></a>
       <p class="sous-title-education">See CV attached at the bottom</p>
+      <div class="container container-education">
+        <div class="education-cards lewagon-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
+          <p class=edu-title-card>Le Wagon Montreal</p>
+          <p class=edu-year-card>2017</p>
+          <p class=edu-description-card>FullStack Developer bootcamp</p>
+        </div>
 
-     <div class="container container-education">
+        <div class="footprint-edu flipit">
+        </div>
 
-      <div class="education-cards lewagon-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
-        <p class=edu-title-card>Le Wagon Montreal</p>
-        <p class=edu-year-card>2017</p>
-        <p class=edu-description-card>FullStack Developer bootcamp</p>
-      </div>
+        <div class="education-cards mcgill-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
+          <p class=edu-title-card>Mcgill University</p>
+          <p class=edu-year-card>2016 - 2018</p>
+          <p class=edu-description-card>Entrepreneurship certificate</p>
+        </div>
 
-      <div class="footprint-edu flipit">
-      </div>
+        <div class="footprint-edu">
+        </div>
 
-      <div class="education-cards mcgill-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
-        <p class=edu-title-card>Mcgill University</p>
-        <p class=edu-year-card>2016 - 2018</p>
-        <p class=edu-description-card>Entrepreneurship certificate</p>
-      </div>
-
-      <div class="footprint-edu">
-      </div>
-
-      <div class="education-cards stan-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
-        <p class=edu-title-card>Stanislas College</p>
-        <p class=edu-year-card>2014</p>
-        <p class=edu-description-card>French Baccalaureate in Economics and Social</p>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<!-- CONTACT -->
-
-
-
-
-
-<!--    <div class="wrapper">
-      <a id="contact-jump"><p action="mailto:someone@example.com" class="title-contact">CONTACT ME</p></a>
-   </div> -->
-
-   <!-- <form class="contact_form cf" action="mailto:someone@example.com">
-    <div class="half left cf">
-      <input type="text" class="input_name" placeholder="Name">
-      <input type="email" class="input_email" placeholder="Email address">
-      <input type="text" class="input_subject" placeholder="Subject">
-    </div>
-
-    <div class="half right cf">
-      <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-    </div>
-
-    <input type="submit" value="SEND" class="input_submit">
-   </form> -->
-
-
-
-
-
-<!-- FOOTER -->
-
-
-
-
-
-  <footer>
-    <div class="container-footer">
-      <div class="social-logo">
-        <ul class="social-logo-footer">
-          <li><a href="https://github.com/twentyfivemtl"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/wazz25"<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/thibaultderennes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-      <div class="footer-cv">
-      <a href="images/Thibault-Derennes-CV.pdf" download>Download my CV</a>
-    </div>
-      <div class="footer-copyright">
-        © 2017 TWENTY FIVE
+        <div class="education-cards stan-edu" style="background-image:  linear-gradient(-225deg, rgba(174, 103, 116,0.4) 0%, rgba(144, 47, 64,0.4) 50%), url('images/education-image.jpeg');">
+          <p class=edu-title-card>Stanislas College</p>
+          <p class=edu-year-card>2014</p>
+          <p class=edu-description-card>French Baccalaureate in Economics and Social</p>
+        </div>
       </div>
     </div>
-  </footer>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-footer">
+        <div class="social-logo">
+          <ul class="social-logo-footer">
+            <li><a href="https://github.com/twentyfivemtl"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/wazz25"<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/thibaultderennes/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-cv">
+          <a href="images/Thibault-Derennes-CV.pdf" download>Download my CV</a>
+        </div>
+        <div class="footer-copyright">
+          © 2017 TWENTY FIVE
+        </div>
+      </div>
+    </footer>
 
   </body>
 
-</html>
+  </html>
 
 
 
